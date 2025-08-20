@@ -29,13 +29,15 @@ We have simple requirements in `requirements.txt`. You can always check if you c
 ### Download Datasets and LM
 The datasets as well as the pretrained LM (LMsr) are uploaded here: https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp?usp=sharing
 
-To download and set up the datasets and LM, run:
-```bash
-# Install gdown if not already installed
-pip install gdown
+You need to manually download these 3 files from the Google Drive folder:
+1. **data.zip** (1.47 GB) - Contains the WebQSP dataset
+2. **entities_names.json** (22.3 MB) - Entity names mapping
+3. **pretrained_lms.zip** (803.4 MB) - Pretrained language models
 
-# Download using the shared folder URL
-gdown --folder --remaining-ok "https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp"
+To download them:
+```bash
+# Download the folder contents
+gdown --folder "https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp"
 ```
 
 The datasets and LM will be extracted to their corresponding folders in the `data` directory.
