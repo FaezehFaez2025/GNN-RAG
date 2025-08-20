@@ -20,9 +20,30 @@ pip install numpy==1.19.5 tqdm==4.59.0 transformers==4.6.1
 
 We have simple requirements in `requirements.txt`. You can always check if you can run the code immediately.
 
-The datasets as well as the pretrained LM (LMsr) are uploaded here: hhttps://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp?usp=sharing
+### Download Datasets and LM
+The datasets as well as the pretrained LM (LMsr) are uploaded here: https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp?usp=sharing
 
-Please download them and extract them to the corresponding folders.
+To download and set up the datasets and LM, run:
+```bash
+# Install gdown if not already installed
+pip install gdown
+
+# Create data directory
+mkdir -p data
+
+# Download datasets and LM
+gdown https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp -O data/datasets_and_lm.zip --folder
+
+# Extract the downloaded files
+cd data
+unzip datasets_and_lm.zip
+cd ..
+
+# Clean up
+rm data/datasets_and_lm.zip
+```
+
+The datasets and LM will be extracted to their corresponding folders in the `data` directory.
 
 ## Training
 Please follow the guidelines and hyperparamters of the corresponding GNNs for training. See `scripts` on a training example.  
