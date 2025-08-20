@@ -37,17 +37,11 @@ pip install gdown
 # Create webqsp data directory
 mkdir -p data/webqsp
 
-# Download the dataset files
+# Download and extract the dataset files
 cd data/webqsp
-
-# First, download the folder contents
-gdown --folder "https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp"
-
-# Extract the downloaded files
-unzip "*.zip"
-
-# Clean up (optional)
-rm *.zip
+gdown "https://drive.google.com/uc?id=1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp&confirm=t" -O data.zip
+unzip data.zip -d .
+rm data.zip
 cd ../..
 ```
 
