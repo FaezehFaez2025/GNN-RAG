@@ -10,6 +10,18 @@ Please follow the guidelines and hyperparamters of the corresponding GNNs for tr
 
 Otherwise, you can download released GNN models from here: https://drive.google.com/file/d/1p7eLSsSKkZQxB32mT5lMsthVP6R_3x1j/view
 
+To download the pretrained GNN models, run:
+```bash
+# Install gdown if not already installed
+pip install gdown
+
+# Download the pretrained models
+gdown 1p7eLSsSKkZQxB32mT5lMsthVP6R_3x1j -O pretrained_gnn_models.zip
+
+# Extract the models
+unzip pretrained_gnn_models.zip
+```
+
 ## Evaluation
 
 To evaluate them, copy the command from the above scripts, add the `--is_eval` argument, and `--load experiment` followed by the name of the corresponding `ckpt` model.
