@@ -31,16 +31,10 @@ pip install gdown
 # Create data directory
 mkdir -p data
 
-# Download datasets and LM
-gdown https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp -O data/datasets_and_lm.zip --folder
-
-# Extract the downloaded files
+# Download datasets and LM directly to the data directory
 cd data
-unzip datasets_and_lm.zip
+gdown https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp --folder
 cd ..
-
-# Clean up
-rm data/datasets_and_lm.zip
 ```
 
 The datasets and LM will be extracted to their corresponding folders in the `data` directory.
