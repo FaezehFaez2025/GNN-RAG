@@ -38,6 +38,10 @@ To download them:
 ```bash
 # Download the folder contents
 gdown --folder "https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp"
+
+# Move data.zip to gnn folder and extract
+mv GNN-RAG/data.zip .
+unzip data.zip
 ```
 
 The datasets and LM will be extracted to their corresponding folders in the `data` directory.
