@@ -34,11 +34,11 @@ To download and set up the datasets and LM, run:
 # Install gdown if not already installed
 pip install gdown
 
-# Create data directory
-mkdir -p data
+# Create webqsp data directory
+mkdir -p data/webqsp
 
 # Download the dataset files
-cd data
+cd data/webqsp
 
 # First, download the folder contents
 gdown --folder "https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp"
@@ -48,7 +48,7 @@ unzip "*.zip"
 
 # Clean up (optional)
 rm *.zip
-cd ..
+cd ../..
 ```
 
 The datasets and LM will be extracted to their corresponding folders in the `data` directory.
