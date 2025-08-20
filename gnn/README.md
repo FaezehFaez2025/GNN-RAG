@@ -8,8 +8,14 @@ First, create and activate a conda environment, then install the requirements:
 conda create -n gnn-rag python=3.8
 conda activate gnn-rag
 
-# Install requirements
-pip install -r requirements.txt
+# Install PyTorch (choose the command based on your CUDA version)
+# For CUDA 11.0:
+pip install torch==1.7.1+cu110 -f https://download.pytorch.org/whl/torch_stable.html
+# OR for CPU only:
+# pip install torch==1.7.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+
+# Install other requirements
+pip install numpy==1.19.5 tqdm==4.59.0 transformers==4.6.1
 ```
 
 We have simple requirements in `requirements.txt`. You can always check if you can run the code immediately.
