@@ -1,4 +1,17 @@
 ## Get Started
+
+### Environment Setup
+First, create and activate a conda environment, then install the requirements:
+
+```bash
+# Create and activate conda environment
+conda create -n gnn-rag python=3.8
+conda activate gnn-rag
+
+# Install requirements
+pip install -r requirements.txt
+```
+
 We have simple requirements in `requirements.txt`. You can always check if you can run the code immediately.
 
 The datasets as well as the pretrained LM (LMsr) are uploaded here: hhttps://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp?usp=sharing
