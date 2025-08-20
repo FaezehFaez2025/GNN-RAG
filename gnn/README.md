@@ -14,8 +14,14 @@ pip install torch==1.7.1+cu110 -f https://download.pytorch.org/whl/torch_stable.
 # OR for CPU only:
 # pip install torch==1.7.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
 
-# Install other requirements
-pip install numpy==1.19.5 tqdm==4.59.0 transformers==4.6.1
+# Install base requirements
+pip install numpy==1.19.5 tqdm==4.59.0
+
+# Install transformers and its dependencies
+pip install transformers==4.6.1 six>=1.14.0
+
+# Install sentence-transformers for SBERT
+pip install sentence-transformers
 ```
 
 We have simple requirements in `requirements.txt`. You can always check if you can run the code immediately.
