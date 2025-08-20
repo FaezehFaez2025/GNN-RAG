@@ -40,12 +40,14 @@ mkdir -p data
 # Download the dataset files
 cd data
 
-# Download and extract data.zip (contains WebQSP dataset)
-gdown "https://drive.google.com/uc?id=1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp" -O data.zip
-unzip data.zip
+# First, download the folder contents
+gdown --folder "https://drive.google.com/drive/folders/1ifgVHQDnvFEunP9hmVYT07Y3rvcpIfQp"
 
-# Clean up
-rm data.zip
+# Extract the downloaded files
+unzip "*.zip"
+
+# Clean up (optional)
+rm *.zip
 cd ..
 ```
 
